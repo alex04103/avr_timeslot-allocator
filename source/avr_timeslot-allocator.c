@@ -8,8 +8,13 @@
 
 #include <avr/io.h>
 
+#define UART_BAUD_RATE	250000
+
 int main(void)
 {
+	
+	DDRB |= (1 << DDD7) | (1 << DDD5);
+	
     while(1)
     {
         
